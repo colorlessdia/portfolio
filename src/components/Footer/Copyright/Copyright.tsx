@@ -1,6 +1,10 @@
+import styles from './Copyright.module.css';
+
 const Copyright = () => {
   return (
-    <p>&copy; 2024. Kim Donghyun. All rights reserved.</p>
+    <p className={styles.copyright}>
+      &copy; 2024. Kim Donghyun. All rights reserved.
+    </p>
   );
 };
 
