@@ -1,0 +1,10 @@
+.gnb {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.gnb_link_list {
+  display: flex;
+  gap: 2.4rem;
+}
