@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 
 // import: components
 import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 // type: props
 interface RootLayoutProps {
@@ -13,6 +14,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
     <>
       <Header />
       {children}
+      <Footer />
     </>
   );
 };
