@@ -11,6 +11,7 @@
 
 .section_title {
   padding-bottom: var(--title-h2-bottom);
+  font-size: var(--title-h2-size);
 }
 
 .skill_part {
@@ -19,6 +20,7 @@
 
 .part_title {
   padding-bottom: var(--title-h3-bottom);
+  font-size: var(--title-h3-size);
 }
 
 .skill_list {

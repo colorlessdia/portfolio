@@ -11,6 +11,7 @@
 
 .section_title {
   padding-bottom: var(--title-h2-bottom);
+  font-size: var(--title-h2-size);
 }
 
 .intro_text {

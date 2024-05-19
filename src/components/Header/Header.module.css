@@ -1,7 +1,15 @@
 .header {
   display: flex;
   justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: var(--header-height);
+  background: #fff;
   box-shadow: 0 1px 3px rgba(0,0,0,.25);
+  z-index: 79;
 }
 
 .header_inner {

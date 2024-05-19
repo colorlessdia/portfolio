@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import styles from './RootLayout.module.css';
 
 // import: components
 import Header from '../../components/Header/Header';
@@ -11,11 +12,11 @@ interface RootLayoutProps {
 
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
-    <>
+    <div className={styles.layout_wrap}>
       <Header />
       {children}
       <Footer />
-    </>
+    </div>
   );
 };
 
