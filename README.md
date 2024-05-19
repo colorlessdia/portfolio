@@ -1,5 +1,8 @@
 # Portfolio App
 
+## 사용 기술 스택
+HTML, CSS, JS(TS), React JS, Redux(toolkit)
+
 ## 디렉토리 구조
 >/src
 
@@ -14,3 +17,4 @@
   >>/pages: 라우팅 페이지 모음
 
   >>/utils: 유틸리티 관련 모음
+
