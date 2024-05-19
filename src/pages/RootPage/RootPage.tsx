@@ -1,4 +1,4 @@
-import RootLayout from "../../layouts/RootLayout/RootLayout";
+import RootLayout from '../../layouts/RootLayout/RootLayout';
 import MainPage from '../MainPage/MainPage';
 
 const RootPage = () => {

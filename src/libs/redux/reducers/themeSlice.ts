@@ -1,8 +1,8 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 // import: types
-import type { PayloadAction } from "@reduxjs/toolkit";
-import type { ThemeType } from "../../../types";
+import type { PayloadAction } from '@reduxjs/toolkit';
+import type { ThemeType } from '../../../types';
 
 // type: initialState
 interface ThemeInitialState {
