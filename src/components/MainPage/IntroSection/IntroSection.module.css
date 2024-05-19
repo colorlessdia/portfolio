@@ -13,15 +13,6 @@
   padding-bottom: var(--title-h2-bottom);
 }
 
-.skill_part {
-  padding-bottom: 3rem;
-}
-
-.part_title {
-  padding-bottom: var(--title-h3-bottom);
-}
-
-.skill_list {
-  display: flex;
-  gap: .5rem;
+.intro_text {
+  font-size: 1.8rem;
 }
