@@ -17,3 +17,12 @@
 .intro_text {
   font-size: 1.8rem;
 }
+
+.part {
+  padding-bottom: 3rem;
+}
+
+.part_title {
+  padding-bottom: var(--title-h3-bottom);
+  font-size: var(--title-h3-size);
+}

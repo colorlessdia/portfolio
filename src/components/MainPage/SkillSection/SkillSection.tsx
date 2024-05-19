@@ -32,7 +32,7 @@ const SkillSection = () => {
     <section className={styles.section}>
       <div className={styles.section_inner}>
         <h2 className={styles.section_title}>Skills</h2>
-        {/* strong part */}
+        {/* part: skill */}
         <div className={styles.skill_part}>
           {/* list: strong skill */}
           <h3 className={styles.part_title}>Strong</h3>
@@ -45,7 +45,7 @@ const SkillSection = () => {
             ))}
           </ul>
         </div>
-        {/* knowledgeable part */}
+        {/* part: knowledgeable */}
         <div className={styles.skill_part}>
           {/* list: knowledgeable skill */}
           <h3 className={styles.part_title}>Knowledgeable</h3>
@@ -58,7 +58,7 @@ const SkillSection = () => {
             ))}
           </ul>
         </div>
-        {/* etc part */}
+        {/* part: etc */}
         <div className={styles.skill_part}>
           {/* list: etc skill */}
           <h3 className={styles.part_title}>Etc</h3>
