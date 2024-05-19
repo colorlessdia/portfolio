@@ -1,5 +1,5 @@
 // import: icons
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiPython, SiTypescript, SiRedux, SiNodedotjs, SiNextdotjs, SiMysql } from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiPython, SiTypescript, SiRedux, SiNodedotjs, SiNextdotjs, SiMysql, SiGit } from "react-icons/si";
 
 import SkillBadge from './SkillBadge/SkillBadge';
 import styles from './SkillSection.module.css';
@@ -22,6 +22,11 @@ const SkillSection = () => {
     { skillIcon: <SiNextdotjs />, skillName: 'Next JS', skillStyles: { color: '#fff', backgroundColor: '#000' } },
     { skillIcon: <SiMysql />, skillName: 'My SQL', skillStyles: { color: '#fff', backgroundColor: '#4479A1' } },
   ];
+
+  // list: etc skill
+  const etcSkillList = [
+    { skillIcon: <SiGit />, skillName: 'Git', skillStyles: { color: '#fff', backgroundColor: '#F05032' } },
+  ]
 
   return (
     <section className={styles.section}>
@@ -46,6 +51,19 @@ const SkillSection = () => {
           <h3 className={styles.part_title}>Knowledgeable</h3>
           <ul className={styles.skill_list}>
             {knowledgeableSkillList.map(skill => (
+              <SkillBadge
+                key={skill.skillName}
+                skill={skill}
+              />
+            ))}
+          </ul>
+        </div>
+        {/* etc part */}
+        <div className={styles.skill_part}>
+          {/* list: etc skill */}
+          <h3 className={styles.part_title}>Etc</h3>
+          <ul className={styles.skill_list}>
+            {etcSkillList.map(skill => (
               <SkillBadge
                 key={skill.skillName}
                 skill={skill}
