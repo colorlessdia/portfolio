@@ -1,9 +1,10 @@
 .footer {
   display: flex;
   justify-content: center;
+  border-top: .1rem solid #ccc;
 }
 
 .footer_inner {
   width: 144rem;
-  padding: 0 2rem;
+  padding: 2rem;
 }
