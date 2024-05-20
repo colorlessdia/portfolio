@@ -1,6 +1,7 @@
 import type { ProjectItemType } from '../../../../../types';
 import styles from './ProjectItem.module.css';
 import ProjectMedia from './ProjectMedia/ProjectMedia';
+import SkillMiniBadge from './SkillMiniBadge/SkillMiniBadge';
 
 // type: props
 interface ProjectItemProps {
@@ -17,65 +18,87 @@ const ProjectItem = ({ projectItem }: ProjectItemProps) => {
       <ProjectMedia media={projectItem.media} />
       {/* description */}
       <div className={styles.project_description}>
-        <h3>
-          <strong>프로젝트 이름</strong>: {projectItem.projectName}
-        </h3>
-        <p><strong>프로젝트 기간</strong>: {projectItem.timeframe}</p>
-        <p>
-          <strong>참여 인원</strong>:&nbsp;
-          {projectItem.participant}
-        </p>
-        <p>
-          <strong>담당 업무</strong>:&nbsp;
-          {projectItem.task}
-        </p>
-        <div>
-          <strong>사용 기술</strong>:&nbsp;
+        {/* title */}
+        <div className={styles.part}>
+          <h3 className={styles.project_title}>
+            <strong>{projectItem.projectName}</strong>
+          </h3>
+          <p>{projectItem.subTitle}</p>
+        </div>
+        <div className={styles.part}>
+          {/* time frame */}
+          <p>
+            <strong>기간</strong>: {projectItem.timeframe}
+          </p>
+          {/* participant */}
+          <p>
+            <strong>참여 인원</strong>:&nbsp;
+            {projectItem.participant}
+          </p>
+        </div>
+        <div className={styles.part}>
+          {/* task */}
+          <p>
+            <strong>담당</strong>: {projectItem.task}
+          </p>
+          <ul>
+            {projectItem.taskDetail.map(detail => (
+              <li key={detail}>{detail}</li>
+            ))}
+          </ul>
+        </div>
+        {/* skills */}
+        <div className={styles.part}>
           {/* front && true */}
           {projectItem.skills?.frontEnd &&
-          <div>
-            <strong>Front-End</strong>:&nbsp;
+          <div className={styles.skill_part}>
+            <strong className={styles.skill_type}>Front-End</strong>
             <ul className={styles.skill_list}>
               {projectItem.skills.frontEnd.map(skill => (
-                <li
+                <SkillMiniBadge
                   key={skill}
-                >
-                  {skill}
-                </li>
+                  skill={skill}
+                />
               ))}
             </ul>
           </div>}
           {/* back && true */}
           {projectItem.skills?.backEnd &&
-          <div>
-            <strong>Back-End</strong>:&nbsp;
+          <div className={styles.skill_part}>
+            <strong className={styles.skill_type}>Back-End</strong>
             <ul className={styles.skill_list}>
               {projectItem.skills.backEnd.map(skill => (
-                <li
+                <SkillMiniBadge
                   key={skill}
-                >
-                  {skill}
-                </li>
+                  skill={skill}
+                />
               ))}
             </ul>
           </div>}
           {/* database && true */}
           {projectItem.skills?.database &&
-          <div>
-            <strong>Database</strong>:&nbsp;
+          <div className={styles.skill_part}>
+            <strong className={styles.skill_type}>Database</strong>
             <ul className={styles.skill_list}>
               {projectItem.skills.database.map(skill => (
-                <li
+                <SkillMiniBadge
                   key={skill}
-                >
-                  {skill}
-                </li>
+                  skill={skill}
+                />
               ))}
             </ul>
           </div>}
         </div>
-        <p><strong>Github</strong>: {projectItem.link}</p>
-        <p><strong>Comment</strong>: {projectItem.comment}</p>
+        <div className={styles.part}>
+          {/* github */}
+          <p>
+            <strong>Github</strong>: {projectItem.link}
+          </p>
+        </div>
+        {/* comment */}
+        <p>
+          <strong>Comment</strong>: {projectItem.comment}
+        </p>
       </div>
     </li>
   );

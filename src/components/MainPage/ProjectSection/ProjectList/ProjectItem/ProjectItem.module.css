@@ -4,11 +4,30 @@
   padding-bottom: 6rem;
 }
 
+.part {
+  padding-bottom: 2rem;
+}
+
 .project_description {
+  width: 52rem;
   padding: 2rem;
+}
+
+.project_title {
+  font-size: 2.4rem;
+}
+
+.skill_part {
+  display: flex;
+}
+
+.skill_type {
+  width: 9rem;
+  padding-top: .5rem;
 }
 
 .skill_list {
   display: flex;
   gap: .5rem;
+  padding-top: .5rem;
 }

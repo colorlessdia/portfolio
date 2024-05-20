@@ -14,9 +14,11 @@ export type MediaContentType = string;
 
 export interface ProjectItemType {
   projectName: string;
+  subTitle: string;
   timeframe: string;
   participant: string;
   task: string;
+  taskDetail: string[];
   skills: {
     frontEnd?: string[],
     backEnd?: string[],
