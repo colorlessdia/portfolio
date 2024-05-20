@@ -1,0 +1,12 @@
+.project_description {
+  padding: 2rem;
+}
+
+.project_item {
+  display: flex;
+}
+
+.skill_list {
+  display: flex;
+  gap: .5rem;
+}
