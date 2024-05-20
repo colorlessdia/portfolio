@@ -29,11 +29,11 @@ const ProjectItem = ({ projectItem }: ProjectItemProps) => {
           <strong>담당 업무</strong>:&nbsp;
           {projectItem.task}
         </p>
-        <p>
+        <div>
           <strong>사용 기술</strong>:&nbsp;
           {/* front && true */}
           {projectItem.skills?.frontEnd &&
-          <p>
+          <div>
             <strong>Front-End</strong>:&nbsp;
             <ul className={styles.skill_list}>
               {projectItem.skills.frontEnd.map(skill => (
@@ -44,10 +44,37 @@ const ProjectItem = ({ projectItem }: ProjectItemProps) => {
                 </li>
               ))}
             </ul>
-          </p>}
-          
-        </p>
-        <p><strong>Link</strong>: {projectItem.link}</p>
+          </div>}
+          {/* back && true */}
+          {projectItem.skills?.backEnd &&
+          <div>
+            <strong>Back-End</strong>:&nbsp;
+            <ul className={styles.skill_list}>
+              {projectItem.skills.backEnd.map(skill => (
+                <li
+                  key={skill}
+                >
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>}
+          {/* database && true */}
+          {projectItem.skills?.database &&
+          <div>
+            <strong>Database</strong>:&nbsp;
+            <ul className={styles.skill_list}>
+              {projectItem.skills.database.map(skill => (
+                <li
+                  key={skill}
+                >
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>}
+        </div>
+        <p><strong>Github</strong>: {projectItem.link}</p>
         <p><strong>Comment</strong>: {projectItem.comment}</p>
       </div>
     </li>

@@ -1,9 +1,11 @@
-.project_description {
-  padding: 2rem;
-}
-
 .project_item {
   display: flex;
+  gap: 2rem;
+  padding-bottom: 6rem;
+}
+
+.project_description {
+  padding: 2rem;
 }
 
 .skill_list {

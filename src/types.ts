@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 
 // theme
 export type ThemeType = 
@@ -11,9 +10,7 @@ export type MediaType =
   | 'image'
   | 'video';
 
-export type MediaContentType =
-  | ReactNode
-  | string;
+export type MediaContentType = string;
 
 export interface ProjectItemType {
   projectName: string;
