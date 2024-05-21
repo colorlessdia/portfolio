@@ -13,3 +13,16 @@
   padding-bottom: var(--title-h2-bottom);
   font-size: var(--title-h2-size);
 }
+
+.table_caption {
+  padding-bottom: var(--title-h3-bottom);
+  font-size: var(--title-h3-size);
+  text-align: left;
+}
+
+.table_heading {
+  padding: 1rem 0;
+  font-size: 1.8rem;
+  text-align: left;
+  border-bottom: .1rem solid #333;
+}

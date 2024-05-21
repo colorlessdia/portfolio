@@ -33,3 +33,11 @@ export interface ProjectItemType {
   };
   logoPath: string;
 }
+
+// awards
+export interface AwardItemType {
+  awardName: string;
+  award: string;
+  institution: string;
+  date: string;
+}
