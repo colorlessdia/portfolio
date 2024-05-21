@@ -12,7 +12,7 @@ const IntroSection = () => {
         </div>
         {/* part: related link */}
         <div className={styles.part}>
-          <h3 className={styles.part_title}>Related Link</h3>
+          <h3 className={styles.part_title}>관련 링크</h3>
           <RelatedLinkList />
         </div>
       </div>

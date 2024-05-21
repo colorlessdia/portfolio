@@ -25,7 +25,7 @@ const ProjectList = () => {
     {
       projectName: 'EYES ON',
       subTitle: '열화상 카메라 활용 전기 설비 이상유무 판단 시스템',
-      timeframe: '2023-11-01 ~ 2023-12-06',
+      timeframe: '2023-11-01 ~ 2023-12-01',
       participant: 'Team. 내집마련 시그니엘 (4명)',
       task: 'Front-End',
       taskDetail: ['담당내용1', '담당내용2'],
@@ -45,7 +45,7 @@ const ProjectList = () => {
     },
     {
       projectName: '땅땅',
-      subTitle: '주거 / 숙박시설 경매 플랫폼',
+      subTitle: '주거 / 숙박시설 경매 중개 플랫폼',
       timeframe: '2023-08-02 ~ 2023-08-17',
       participant: 'Team. 코딩해도되나요 (5명)',
       task: 'Front-End',
