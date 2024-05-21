@@ -1,0 +1,15 @@
+.section {
+  display: flex;
+  justify-content: center;
+  padding-bottom: var(--section-bottom);
+}
+
+.section_inner {
+  width: 144rem;
+  padding: 2rem;
+}
+
+.section_title {
+  padding-bottom: var(--title-h2-bottom);
+  font-size: var(--title-h2-size);
+}

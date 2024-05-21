@@ -1,6 +1,7 @@
 import IntroSection from '../../components/MainPage/IntroSection/IntroSection';
 import SkillSection from '../../components/MainPage/SkillSection/SkillSection';
 import ProjectSection from '../../components/MainPage/ProjectSection/ProjectSection';
+import AwardSection from '../../components/MainPage/AwardSection/AwardSection';
 
 const MainPage = () => {
   return (
@@ -8,6 +9,7 @@ const MainPage = () => {
       <IntroSection />
       <SkillSection />
       <ProjectSection />
+      <AwardSection />
     </main>
   );
 };
