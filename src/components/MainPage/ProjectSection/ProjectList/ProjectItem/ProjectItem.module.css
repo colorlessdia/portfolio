@@ -4,6 +4,10 @@
   padding-bottom: 6rem;
 }
 
+.project_item:last-of-type {
+  padding-bottom: 0;
+}
+
 .part {
   padding-bottom: 2rem;
 }
