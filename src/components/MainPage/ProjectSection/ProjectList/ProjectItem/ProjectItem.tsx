@@ -1,7 +1,8 @@
 import type { ProjectItemType } from '../../../../../types';
-import styles from './ProjectItem.module.css';
 import ProjectMedia from './ProjectMedia/ProjectMedia';
+import ProjectTitle from './ProjectTitle/ProjectTitle';
 import SkillMiniBadge from './SkillMiniBadge/SkillMiniBadge';
+import styles from './ProjectItem.module.css';
 
 // type: props
 interface ProjectItemProps {
@@ -18,12 +19,12 @@ const ProjectItem = ({ projectItem }: ProjectItemProps) => {
       <ProjectMedia media={projectItem.media} />
       {/* description */}
       <div className={styles.project_description}>
-        {/* title */}
         <div className={styles.part}>
-          <h3 className={styles.project_title}>
-            <strong>{projectItem.projectName}</strong>
-          </h3>
-          <p>{projectItem.subTitle}</p>
+          <ProjectTitle
+            projectName={projectItem.projectName}
+            subTitle={projectItem.subTitle}
+            logoPath={projectItem.logoPath}
+          />
         </div>
         <div className={styles.part}>
           {/* time frame */}
@@ -43,7 +44,12 @@ const ProjectItem = ({ projectItem }: ProjectItemProps) => {
           </p>
           <ul>
             {projectItem.taskDetail.map(detail => (
-              <li key={detail}>{detail}</li>
+              <li
+                key={detail}
+                className={styles.task_detail}
+              >
+                {detail}
+              </li>
             ))}
           </ul>
         </div>

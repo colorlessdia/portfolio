@@ -30,4 +30,5 @@ export interface ProjectItemType {
     type: MediaType;
     content: MediaContentType;
   };
+  logoPath: string;
 }

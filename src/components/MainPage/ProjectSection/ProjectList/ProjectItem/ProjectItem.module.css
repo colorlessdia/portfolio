@@ -13,8 +13,22 @@
   padding: 2rem;
 }
 
-.project_title {
-  font-size: 2.4rem;
+.task_detail {
+  position: relative;
+  margin-left: 2rem;
+  padding-left: 2rem;
+}
+
+.task_detail::before {
+  content: "";
+  position: absolute;
+  left: .7rem;
+  top: 50%;
+  width: .6rem;
+  height: .6rem;
+  border-radius: 50%;
+  background: #666;
+  transform: translateY(calc(-50% + .1rem));
 }
 
 .skill_part {

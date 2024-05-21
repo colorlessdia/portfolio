@@ -19,7 +19,8 @@ const ProjectList = () => {
       media: {
         type: 'component',
         content: '',
-      }
+      },
+      logoPath: '/media/images/react_logo.png',
     },
     {
       projectName: 'EYES ON',
@@ -37,8 +38,9 @@ const ProjectList = () => {
       link: 'colorlessdia.github.io/eyeson',
       media: {
         type: 'video',
-        content: '/media/eyes_on_project.mp4',
-      }
+        content: '/media/videos/eyes_on_project.mp4',
+      },
+      logoPath: '/media/images/eyes_on_logo.png',
     },
     {
       projectName: '땅땅',
@@ -56,8 +58,9 @@ const ProjectList = () => {
       link: 'colorlessdia.github.io/ddangddang',
       media: {
         type: 'video',
-        content: '/media/ddang_ddang_project.mp4',
-      }
+        content: '/media/videos/ddang_ddang_project.mp4',
+      },
+      logoPath: '/media/images/ddang_ddang_logo.png',
     },
   ];
 
