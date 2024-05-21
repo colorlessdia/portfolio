@@ -7,9 +7,9 @@ interface ProjectMediaProps {
   media: {
     type: MediaType;
     content: MediaContentType;
+    thumbnail?: string;
   };
 }
-
 const ProjectMedia = ({ media }: ProjectMediaProps) => {
   return (
     <div className={styles.project_media}>
@@ -27,6 +27,7 @@ const ProjectMedia = ({ media }: ProjectMediaProps) => {
           src={media.content}
           controls
           muted
+          poster={media?.thumbnail}
           className={styles.type_video}
         ></video>
       }

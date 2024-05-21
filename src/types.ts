@@ -29,6 +29,7 @@ export interface ProjectItemType {
   media: {
     type: MediaType;
     content: MediaContentType;
+    thumbnail?: string;
   };
   logoPath: string;
 }

@@ -39,6 +39,7 @@ const ProjectList = () => {
       media: {
         type: 'video',
         content: '/media/videos/eyes_on_project.mp4',
+        thumbnail: '/media/images/eyes_on_video_thumbnail.png'
       },
       logoPath: '/media/images/eyes_on_logo.png',
     },
@@ -59,6 +60,7 @@ const ProjectList = () => {
       media: {
         type: 'video',
         content: '/media/videos/ddang_ddang_project.mp4',
+        thumbnail: '/media/images/ddang_ddang_video_thumbnail.png'
       },
       logoPath: '/media/images/ddang_ddang_logo.png',
     },
