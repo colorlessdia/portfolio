@@ -35,9 +35,15 @@ export interface ProjectItemType {
 }
 
 // awards
+export type AwardType =
+| '최우수상'
+| '우수상'
+| '장려상';
+
 export interface AwardItemType {
   awardName: string;
-  award: string;
+  award: AwardType;
+  category: string;
   institution: string;
   date: string;
 }

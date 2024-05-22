@@ -7,30 +7,35 @@ const AwardSection = () => {
     {
       awardName: '실전역량프로젝트(왕중왕전)',
       award: '장려상',
+      category: '기업연계 팀 프로젝트',
       institution: '인공지능사관학교',
       date: '2023-12'
     },
     {
       awardName: '실전역량프로젝트',
       award: '최우수상',
+      category: '기업연계 팀 프로젝트',
       institution: '인공지능사관학교',
       date: '2023-12'
     },
     {
       awardName: '코딩 페스티벌',
       award: '우수상',
+      category: '페스티벌',
       institution: '인공지능사관학교',
       date: '2023-10'
     },
     {
       awardName: '핵심프로젝트',
       award: '장려상',
+      category: '팀 프로젝트',
       institution: '인공지능사관학교',
       date: '2023-09'
     },
     {
       awardName: '성적 최우수상',
       award: '최우수상',
+      category: '성적 우수자',
       institution: '한국경영원 인재개발원',
       date: '2020-05'
     }
@@ -49,19 +54,23 @@ const AwardSection = () => {
             <tr>
               <th 
                 scope='col'
-                className={styles.table_heading}
+                className={`${styles.table_heading} ${styles.col_1}`}
               >수상 이름</th>
               <th 
                 scope='col'
-                className={styles.table_heading}
+                className={`${styles.table_heading} ${styles.col_2}`}
               >결과</th>
               <th 
                 scope='col'
-                className={styles.table_heading}
+                className={`${styles.table_heading} ${styles.col_3}`}
+              >분류</th>
+              <th 
+                scope='col'
+                className={`${styles.table_heading} ${styles.col_4}`}
               >수여 기관</th>
               <th 
                 scope='col'
-                className={styles.table_heading}
+                className={`${styles.table_heading} ${styles.col_5}`}
               >날짜</th>
             </tr>
           </thead>

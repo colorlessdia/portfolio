@@ -20,8 +20,28 @@
   text-align: left;
 }
 
+.col_1 {
+  width: 30%;
+}
+
+.col_2 {
+  width: 20%;
+}
+
+.col_3 {
+  width: 20%;
+}
+
+.col_4 {
+  width: 20%;
+}
+
+.col_5 {
+  width: 10%;
+}
+
 .table_heading {
-  padding: 1rem 0;
+  padding: 1rem 0 1rem 2rem;
   font-size: 1.8rem;
   text-align: left;
   border-bottom: .1rem solid #333;
