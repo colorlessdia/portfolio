@@ -39,7 +39,7 @@ const ProjectList = () => {
         '반응형 웹, 알림 기능, 로고 디자인, 로딩 애니메이션, 다크모드'
       ],
       skills: {
-        frontEnd: ['HTML5', 'CSS3', 'JS', 'React JS', 'Redux'],
+        frontEnd: ['HTML5', 'CSS3', 'JS', 'React JS', 'Redux', 'Three JS'],
         backEnd: ['Python', 'Flask', 'Node JS'],
         database: ['My SQL']
       },

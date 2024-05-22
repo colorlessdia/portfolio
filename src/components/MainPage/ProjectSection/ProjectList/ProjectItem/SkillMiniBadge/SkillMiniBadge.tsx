@@ -14,6 +14,7 @@ const SkillMiniBadge = ({ skill }: SkillMiniBadgeProps) => {
     'Python': '#3776AB',
     'TS': '#3178C6',
     'Redux': '#764ABC',
+    'Three JS': '#000',
     'Node JS': '#5FA04E',
     'Next JS': '#000',
     'My SQL': '#4479A1',
