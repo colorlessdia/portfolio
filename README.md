@@ -52,18 +52,33 @@ Front-End
     - 라우터 디렉토리 & 페이지: -Page
     - 레이아웃 디렉토리 & 페이지: -Layout
     - 컴포넌트 디렉토리 & 컴포넌트: 컴포넌트 이름
-    - CSS: 컴포넌트명.module.css
+    - CSS: 컴포넌트이름.module.css
 
     Type
     - 컴포넌트 props: 컴포넌트이름 + Props
     - 작성한 타입: -Type
 
 #### 작성 규칙
+    CSS
+    - 아래 순서로 작성
+    - overflow, display, position
+    - width, height, margin, padding
+    - font, text, border, background, boxshadow
+    - transfrom, opacity, z-index
+    - translate | animation
+    - 그 외
+
+    - 한줄에 하나의 속성: 속성값 쌍
+
     JS
     - 태그 속성이 2개 이상일 경우: 한줄당 하나의 속성 작성
     - Single Quote 사용
     - 객체를 한 줄로 작성 할 경우 앞뒤 공백 추가
     - 객체를 여러 줄로 작성 할 경우 브라켓과 내용간 줄바꿈 추가
+    - 화살표 함수 사용
+    - 함수 호출 내부에 다른 호출이 존재할 경우 앞뒤 공백 추가
+    - 반환값이 단일콘텐츠인 경우 () => () 암시적 return 사용
+    - 태그 사이 중괄호는 여러 줄이여도 같은라인부터 작성
 
     Redux
     - initialState는 slice밖에서 작성
