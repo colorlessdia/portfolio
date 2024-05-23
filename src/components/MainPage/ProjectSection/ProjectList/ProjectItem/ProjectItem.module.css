@@ -65,8 +65,8 @@
   }
 }
 
-/* responsive: 480px ~ 1023px */
-@media (480px <= width <= 1023px) {
+/* responsive: 360px ~ 1023px */
+@media (360px <= width <= 1023px) {
   .project_item {
     flex-direction: column;
     padding-bottom: 10rem;

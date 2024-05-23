@@ -83,3 +83,8 @@ Front-End
     Redux
     - initialState는 slice밖에서 작성
     - actions는 분해할당하지 않고 내보내기
+
+#### 반응형 분기점
+데스크탑: 1440px ~ 1920px
+랩탑 | 태블릿: 1024px ~ 1439px
+모바일 | 태블릿: 360px ~ 1023px

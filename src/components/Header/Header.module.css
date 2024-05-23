@@ -45,8 +45,8 @@
   }
 }
 
-/* responsive: 480px ~ 1023px */
-@media (480px <= width <= 1023px) {
+/* responsive: 360px ~ 1023px */
+@media (360px <= width <= 1023px) {
   .header_inner {
     width: 100%;
     padding: 0 1rem;
