@@ -16,6 +16,7 @@
 
 .intro_text {
   font-size: 1.8rem;
+  white-space: pre-line;
 }
 
 .part {
