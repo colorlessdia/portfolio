@@ -46,3 +46,29 @@
   text-align: left;
   border-bottom: .1rem solid #333;
 }
+
+/* responsive: 1024px ~ 1439px */
+@media (1024px <= width <= 1439px) {
+  .section_inner {
+    width: 102.4rem;
+    padding: 1.2rem;
+  }
+
+  .table_heading {
+    padding: 1rem 0 1rem 1.2rem;
+    font-size: 1.6rem;
+  }
+}
+
+/* responsive: 480px ~ 1023px */
+@media (480px <= width <= 1023px) {
+  .section_inner {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .table_heading {
+    padding: 1rem 0 1rem 1rem;
+    font-size: 1.4rem;
+  }
+}

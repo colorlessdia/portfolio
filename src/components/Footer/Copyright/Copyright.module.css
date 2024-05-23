@@ -1,3 +1,10 @@
 .copyright {
   font-family: var(--font-en);
 }
+
+/* responsive: 480px ~ 1023px */
+@media (480px <= width <= 1023px) {
+  .copyright {
+    font-size: 1.4rem;
+  }
+}

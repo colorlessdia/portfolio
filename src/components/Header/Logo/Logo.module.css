@@ -2,3 +2,17 @@
   font-family: var(--font-en);
   font-size: 2.4rem;
 }
+
+/* responsive: 1024px ~ 1439px */
+@media (1024px <= width <= 1439px) {
+  .logo {
+    font-size: 2.2rem;
+  }
+}
+
+/* responsive: 480px ~ 1023px */
+@media (480px <= width <= 1023px) {
+  .logo {
+    font-size: 2rem;
+  }
+}

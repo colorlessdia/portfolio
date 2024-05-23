@@ -27,3 +27,27 @@
   padding-bottom: var(--title-h3-bottom);
   font-size: var(--title-h3-size);
 }
+
+/* responsive: 1024px ~ 1439px */
+@media (1024px <= width <= 1439px) {
+  .section_inner {
+    width: 102.4rem;
+    padding: 1.2rem;
+  }
+
+  .intro_text {
+    font-size: 1.7rem;
+  }
+}
+
+/* responsive: 480px ~ 1023px */
+@media (480px <= width <= 1023px) {
+  .section_inner {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .intro_text {
+    font-size: 1.5rem;
+  }
+}

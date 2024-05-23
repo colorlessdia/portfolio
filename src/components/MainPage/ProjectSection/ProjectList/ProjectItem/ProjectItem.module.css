@@ -46,6 +46,35 @@
 
 .skill_list {
   display: flex;
+  flex-wrap: wrap;
   gap: .5rem;
   padding-top: .5rem;
+}
+
+/* responsive: 1024px ~ 1439px */
+@media (1024px <= width <= 1439px) {
+  .project_item {
+    flex-direction: column;
+    padding-bottom: 10rem;
+  }
+
+  .project_description {
+    width: 100%;
+    padding: 1.2rem 1.2rem 4rem;
+    border-bottom: .1rem solid #ccc;
+  }
+}
+
+/* responsive: 480px ~ 1023px */
+@media (480px <= width <= 1023px) {
+  .project_item {
+    flex-direction: column;
+    padding-bottom: 10rem;
+  }
+
+  .project_description {
+    width: 100%;
+    padding: 1rem 1rem 4rem;
+    border-bottom: .1rem solid #ccc;
+  }
 }

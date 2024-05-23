@@ -27,3 +27,37 @@
 .group_bottom {
   height: 4rem;
 }
+
+/* responsive: 1024px ~ 1439px */
+@media (1024px <= width <= 1439px) {
+  .header_inner {
+    width: 102.4rem;
+    padding: 0 1.2rem;
+  }
+
+  .group_top {
+    height: 5rem;
+    padding-top: 1rem;
+  }
+  
+  .group_bottom {
+    height: 3.5rem;
+  }
+}
+
+/* responsive: 480px ~ 1023px */
+@media (480px <= width <= 1023px) {
+  .header_inner {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .group_top {
+    height: 4rem;
+    padding-top: .5rem;
+  }
+  
+  .group_bottom {
+    height: 3rem;
+  }
+}

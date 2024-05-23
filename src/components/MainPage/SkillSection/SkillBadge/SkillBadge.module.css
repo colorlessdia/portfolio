@@ -24,3 +24,40 @@
 .weight_bold {
   font-weight: 700;
 }
+
+/* responsive: 1024px ~ 1439px */
+@media (1024px <= width <= 1439px) {
+  .badge {
+    padding: .8rem .9rem;
+    border-radius: 1rem;
+  }
+
+  .badge_icon {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.8rem;
+  }
+  
+  .badge_title {
+    padding-right: .4rem;
+  }
+}
+
+/* responsive: 480px ~ 1023px */
+@media (480px <= width <= 1023px) {
+  .badge {
+    padding: .8rem .9rem;
+    border-radius: 1rem;
+  }
+
+  .badge_icon {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  .badge_title {
+    padding-right: .4rem;
+    font-size: 1.5rem;
+  }
+}

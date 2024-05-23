@@ -18,7 +18,7 @@ const ProjectList = () => {
         frontEnd: ['HTML5', 'CSS3', 'JS', 'TS', 'React JS', 'Redux']
       },
       comment: '경험과 학습을 통해 콘텐츠를 채워나갈 공간, 메인페이지는 김동현을 약식 소개하는 페이지, 토이 프로젝트는 자유형식(ex. 연습용 미니 프로젝트, 리뉴얼 프로젝트, 학습 지식 활용 도전 프로젝트 등)',
-      link: 'colorlessdia.github.io/portfolio',
+      link: 'https://colorlessdia.github.io/portfolio',
       media: {
         type: 'component',
         content: '',
@@ -44,7 +44,7 @@ const ProjectList = () => {
         database: ['My SQL']
       },
       comment: '외부 장치와 RTSP 통신 경험, Redux로 상태관리 경험, React3Fiber로 3D모델 도입 경험',
-      link: 'colorlessdia.github.io/eyeson',
+      link: 'https://github.com/colorlessdia/eyeson',
       media: {
         type: 'video',
         content: `${process.env.PUBLIC_URL}/media/videos/eyes_on_project.mp4`,
@@ -70,7 +70,7 @@ const ProjectList = () => {
         database: ['My SQL']
       },
       comment: '첫 React 프로젝트, Context API로 상태관리 경험, Front-Back-DB 가 연결된 웹 애플리케이션 제작 경험',
-      link: 'colorlessdia.github.io/ddangddang',
+      link: 'https://github.com/colorlessdia/ddangddang',
       media: {
         type: 'video',
         content: `${process.env.PUBLIC_URL}/media/videos/ddang_ddang_project.mp4`,

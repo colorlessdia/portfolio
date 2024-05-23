@@ -52,3 +52,46 @@
   height: 100%;
   background: #000;
 }
+
+/* responsive: 1024px ~ 1439px */
+@media (1024px <= width <= 1439px) {
+  .project_media {
+    width: 100rem;
+  }
+}
+
+/* video 800px ~ 1023px */
+@media (800px <= width <= 1023px) {
+  .icon_react {
+    --icon-size: 18rem;
+  }
+
+  .project_media {
+    width: 100%;
+    height: 46rem;
+  }
+}
+
+/* responsive: 600px ~ 799px */
+@media (600px <= width <= 799px) {
+  .icon_react {
+    --icon-size: 16rem;
+  }
+
+  .project_media {
+    width: 100%;
+    height: 40rem;
+  }
+}
+
+/* responsive: 480px ~ 599px */
+@media (480px <= width <= 599px) {
+  .icon_react {
+    --icon-size: 14rem;
+  }
+
+  .project_media {
+    width: 100%;
+    height: 36rem;
+  }
+}

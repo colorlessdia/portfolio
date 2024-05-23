@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import type { ProjectItemType } from '../../../../../types';
 import ProjectMedia from './ProjectMedia/ProjectMedia';
 import ProjectTitle from './ProjectTitle/ProjectTitle';
@@ -98,7 +99,7 @@ const ProjectItem = ({ projectItem }: ProjectItemProps) => {
         <div className={styles.part}>
           {/* github */}
           <p>
-            <strong>Github</strong>: {projectItem.link}
+            <strong>Github</strong>: <Link to={projectItem.link} title='깃허브 바로가기(새창)' target='_blank'>{projectItem.link}</Link>
           </p>
         </div>
         {/* comment */}

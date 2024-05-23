@@ -17,6 +17,7 @@
 
 /* scroll bar */
 ::-webkit-scrollbar {
+  position: fixed;
   width: 1.5rem;
   background: #ccc;
 }
@@ -41,6 +42,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: var(--font-kr);
   font-size: 1.6rem;
   color: #333;
@@ -63,4 +65,28 @@ button {
 table {
   width: 100%;
   border-collapse: collapse;
+}
+
+/* responsive: 1024px ~ 1439px */
+@media (1024px <= width <= 1439px) {
+  :root {
+    --header-height: 8.5rem;
+    --section-bottom: 4rem;
+    --title-h2-size: 3.2rem;
+    --title-h3-size: 2rem;
+    --title-h2-bottom: 3rem;
+    --title-h3-bottom: 1rem;
+  }
+}
+
+/* responsive: 480px ~ 1023px */
+@media (480px <= width <= 1023px) {
+  :root {
+    --header-height: 7rem;
+    --section-bottom: 2rem;
+    --title-h2-size: 2.8rem;
+    --title-h3-size: 1.8rem;
+    --title-h2-bottom: 2rem;
+    --title-h3-bottom: .5rem;
+  }
 }
