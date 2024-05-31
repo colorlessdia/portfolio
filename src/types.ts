@@ -52,4 +52,5 @@ export interface AwardItemType {
 export interface MemoType {
   id: string;
   content: string;
+  dateList: { [date: string]: string };
 }

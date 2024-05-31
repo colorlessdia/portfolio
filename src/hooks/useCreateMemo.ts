@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useAppDispatch } from './useRedux';
 import { memoActions } from '../libs/redux/reducers/memoSlice';
+import getCurrentTime from '../utils/getCurrentTime';
 
 const useCreateMemo = () => {
   const [memoValue, setMemoValue] = useState<string>('');
@@ -22,6 +23,7 @@ const useCreateMemo = () => {
     const memoTemplate = {
       id: uuidv4(),
       content: memoValue,
+      dateList: getCurrentTime(),
     };
 
     // dispatch: memo

@@ -6,7 +6,11 @@ const useDeleteMemo = (id: string) => {
   
   // delete memo
   const handleClickDeleteMemo = () => {
-    appDispatch( memoActions.deleteMemo(id) );
+    const answer = window.confirm('메모를 삭제하시겠습니까?');
+
+    if (answer) {
+      appDispatch( memoActions.deleteMemo(id) );
+    }
   };
 
   return {
