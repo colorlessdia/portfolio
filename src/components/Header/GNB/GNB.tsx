@@ -7,7 +7,8 @@ const GNB = () => {
 
   // list: gnb link
   const gnbLinkList = [
-    { path: '/', title: '메인' }
+    { path: '/', title: '메인' },
+    { path: '/memo', title: '메모장' }
   ];
 
   return (

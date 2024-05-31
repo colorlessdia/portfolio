@@ -47,3 +47,9 @@ export interface AwardItemType {
   institution: string;
   date: string;
 }
+
+// memo
+export interface MemoType {
+  id: string;
+  content: string;
+}

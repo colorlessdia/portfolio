@@ -1,16 +1,6 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { RouterProvider } from 'react-router-dom';
+import router from './libs/router/router';
 
-// import: pages
-import RootPage from './pages/RootPage/RootPage';
-
-const App = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path='/' element={<RootPage />} />
-      </Routes>
-    </Router>
-  );
-};
+const App = () => <RouterProvider router={router} />;
 
 export default App;
