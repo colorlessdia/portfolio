@@ -2,10 +2,12 @@ import { configureStore } from '@reduxjs/toolkit';
 
 // import: slices
 import themeSlice from './reducers/themeSlice';
+import memoSlice from './reducers/memoSlice';
 
 const store = configureStore({
   reducer: {
-    theme: themeSlice
+    theme: themeSlice,
+    memo: memoSlice,
   }
 });
 
