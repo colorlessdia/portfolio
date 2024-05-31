@@ -1,0 +1,9 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.main_inner {
+  width: 144rem;
+  padding: 2rem;
+}
