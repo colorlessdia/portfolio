@@ -5,31 +5,31 @@ import styles from './AwardSection.module.css';
 const AwardSection = () => {
   const awardList: AwardItemType[] = [
     {
-      awardName: '실전역량프로젝트(왕중왕전)',
+      awardName: '실전 역량 프로젝트 (왕중왕전)',
       award: '장려상',
-      category: '기업연계 팀 프로젝트',
-      institution: '인공지능사관학교',
+      category: '기업 연계 팀 프로젝트',
+      institution: '인공지능 사관학교',
       date: '2023-12'
     },
     {
-      awardName: '실전역량프로젝트',
+      awardName: '실전 역량 프로젝트',
       award: '최우수상',
-      category: '기업연계 팀 프로젝트',
-      institution: '인공지능사관학교',
+      category: '기업 연계 팀 프로젝트',
+      institution: '인공지능 사관학교',
       date: '2023-12'
     },
     {
       awardName: '코딩 페스티벌',
       award: '우수상',
       category: '페스티벌',
-      institution: '인공지능사관학교',
+      institution: '인공지능 사관학교',
       date: '2023-10'
     },
     {
-      awardName: '핵심프로젝트',
+      awardName: '핵심 프로젝트',
       award: '장려상',
       category: '팀 프로젝트',
-      institution: '인공지능사관학교',
+      institution: '인공지능 사관학교',
       date: '2023-09'
     },
     {
