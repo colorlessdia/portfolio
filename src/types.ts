@@ -36,9 +36,9 @@ export interface ProjectItemType {
 
 // awards
 export type AwardType =
-| '최우수상'
-| '우수상'
-| '장려상';
+  | '최우수상'
+  | '우수상'
+  | '장려상';
 
 export interface AwardItemType {
   awardName: string;
@@ -49,7 +49,20 @@ export interface AwardItemType {
 }
 
 // memo
-export type UpdatedModeType = boolean | null;
+export type UpdatedModeType =
+  | boolean
+  | null;
+
+export type SortType =
+  | 'latest'
+  | 'oldest'
+  | 'longest'
+  | 'shortest';
+
+export interface SortButtonType {
+  name: string;
+  sortType: SortType;
+}
 
 export interface MemoType {
   id: string;

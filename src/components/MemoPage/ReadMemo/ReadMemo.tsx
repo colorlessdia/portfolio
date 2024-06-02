@@ -6,10 +6,6 @@ import styles from './ReadMemo.module.css';
 const ReadMemo = () => {
   const { memoList } = useAppSelector(state => state.memo);
 
-  useEffect(() =>  {
-    console.log(memoList)
-  }, [memoList]);
-
   return (
     <ul className={styles.memo_list}>
       {

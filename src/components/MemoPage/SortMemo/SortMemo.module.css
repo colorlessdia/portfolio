@@ -1,0 +1,5 @@
+.sort_button_list {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
