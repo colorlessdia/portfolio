@@ -40,6 +40,7 @@
 }
 
 .skill_type {
+  display: inline-block;
   width: 9rem;
   padding-top: .5rem;
   white-space: pre-line;
@@ -77,5 +78,9 @@
     width: 100%;
     padding: 1rem 1rem 4rem;
     border-bottom: .1rem solid #ccc;
+  }
+
+  .skill_part {
+    display: initial;
   }
 }
