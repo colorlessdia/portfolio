@@ -49,8 +49,11 @@ export interface AwardItemType {
 }
 
 // memo
+export type UpdatedModeType = boolean | null;
+
 export interface MemoType {
   id: string;
   content: string;
+  isUpdated: boolean;
   dateList: { [date: string]: string };
 }

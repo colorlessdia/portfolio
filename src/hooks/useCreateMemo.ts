@@ -23,6 +23,7 @@ const useCreateMemo = () => {
     const memoTemplate = {
       id: uuidv4(),
       content: memoValue,
+      isUpdated: false,
       dateList: getCurrentTime(),
     };
 

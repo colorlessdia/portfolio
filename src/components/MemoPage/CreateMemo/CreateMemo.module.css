@@ -1,14 +1,17 @@
 .create_memo {
+  display: flex;
+  align-items: center;
+  height: 3rem;
   margin-bottom: 4rem;
 }
 
 .input {
   width: 30rem;
-  height: 3rem;
+  height: 100%;
   padding-left: 1rem;
 }
 
 .button {
-  height: 3rem;
+  height: 100%;
   padding: 0 1rem;
 }

@@ -18,6 +18,7 @@ const CreateMemo = () => {
         value={memoValue}
         onChange={handleChangeCreateMemoValue}
         onKeyDown={handleKeyDownCreateMemo}
+        placeholder='메모를 입력해보세요'
         className={styles.input}
       />
       <button

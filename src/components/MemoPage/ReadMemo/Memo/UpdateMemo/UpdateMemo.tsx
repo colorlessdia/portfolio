@@ -1,34 +1,12 @@
-import { Dispatch, SetStateAction, useEffect } from 'react';
-import { useAppDispatch } from '../../../../../hooks/useRedux';
-import { memoActions } from '../../../../../libs/redux/reducers/memoSlice';
-import getCurrentTime from '../../../../../utils/getCurrentTime';
+import type { UpdatedModeType } from "../../../../../types";
 
 // type: props
 interface UpdateMemoProps {
-  id: string;
-  memoValue: string;
-  isUpdateMode: boolean;
-  setIsUpdateMode: Dispatch<SetStateAction<boolean>>;
+  isUpdateMode: UpdatedModeType;
+  handleClickUpdateMode: () => void;
 }
 
-const UpdateMemo = ({ id, memoValue, isUpdateMode, setIsUpdateMode }: UpdateMemoProps) => {
-  const appDispatch = useAppDispatch();
-  const handleClickUpdateMode = () => {
-    setIsUpdateMode(prev => !prev);
-  };
-
-  useEffect(() => {
-    if (!isUpdateMode) {
-      const memoTemplate = {
-        id,
-        content: memoValue,
-        dateList: getCurrentTime()
-      };
-
-      appDispatch( memoActions.updateMemo(memoTemplate) );
-    }
-  }, [isUpdateMode]);
-
+const UpdateMemo = ({ isUpdateMode, handleClickUpdateMode }: UpdateMemoProps) => {
   return (
     <button
       type='button'
