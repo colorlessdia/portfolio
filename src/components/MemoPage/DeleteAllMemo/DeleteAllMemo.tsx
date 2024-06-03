@@ -1,12 +1,17 @@
-import { useAppDispatch } from '../../../hooks/useRedux';
+import { useAppDispatch, useAppSelector } from '../../../hooks/useRedux';
 import { memoActions } from '../../../libs/redux/reducers/memoSlice';
 import styles from './DeleteAllMemo.module.css';
 
 const DeleteAllMemo = () => {
   const appDispatch = useAppDispatch();
+  const { memoList } = useAppSelector(state => state.memo);
 
   // handler: delete all memo
   const handleClickDeleteAllMemo = () => {
+    if (memoList.length === 0) {
+      return
+    }
+
     const isAllDelete =  window.confirm('전체 메모를 삭제하시겠어요?');
 
     if (!isAllDelete) {
@@ -14,7 +19,7 @@ const DeleteAllMemo = () => {
     }
 
     // confirm: true
-    const checkMessage = '메모전체삭제';
+    const checkMessage = '전체삭제';
     const checkSign = window.prompt(`"${checkMessage}" 를 정확히 입력하세요 ("" 제외)`);
 
     if (checkSign !== checkMessage) {

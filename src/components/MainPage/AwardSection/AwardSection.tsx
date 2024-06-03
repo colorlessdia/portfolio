@@ -1,8 +1,11 @@
+import { useAppSelector } from '../../../hooks/useRedux';
 import type { AwardItemType } from '../../../types';
 import AwardItem from './AwardItem/AwardItem';
 import styles from './AwardSection.module.css';
 
 const AwardSection = () => {
+  const { theme } = useAppSelector(state => state.theme);
+
   const awardList: AwardItemType[] = [
     {
       awardName: '실전 역량 프로젝트 (왕중왕전)',
@@ -54,22 +57,27 @@ const AwardSection = () => {
             <tr>
               <th 
                 scope='col'
+                style={{ borderBottomColor: theme === 'dark' ? '#fff' : '#000' }}
                 className={`${styles.table_heading} ${styles.col_1}`}
               >수상 이름</th>
               <th 
                 scope='col'
+                style={{ borderBottomColor: theme === 'dark' ? '#fff' : '#000' }}
                 className={`${styles.table_heading} ${styles.col_2}`}
               >결과</th>
               <th 
                 scope='col'
+                style={{ borderBottomColor: theme === 'dark' ? '#fff' : '#000' }}
                 className={`${styles.table_heading} ${styles.col_3}`}
               >분류</th>
               <th 
                 scope='col'
+                style={{ borderBottomColor: theme === 'dark' ? '#fff' : '#000' }}
                 className={`${styles.table_heading} ${styles.col_4}`}
               >수여 기관</th>
               <th 
                 scope='col'
+                style={{ borderBottomColor: theme === 'dark' ? '#fff' : '#000' }}
                 className={`${styles.table_heading} ${styles.col_5}`}
               >날짜</th>
             </tr>

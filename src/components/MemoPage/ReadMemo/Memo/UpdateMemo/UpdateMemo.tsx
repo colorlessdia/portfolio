@@ -10,6 +10,7 @@ const UpdateMemo = ({ isUpdateMode, handleClickUpdateMode }: UpdateMemoProps) =>
   return (
     <button
       type='button'
+      style={{ color: 'inherit' }}
       onClick={handleClickUpdateMode}
     >
       {isUpdateMode ? '완료' : '수정'}

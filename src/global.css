@@ -91,3 +91,16 @@ table {
     --title-h3-bottom: .5rem;
   }
 }
+
+/* theme */
+.dark_font_01 {
+  color: #fff;
+}
+
+.dark_bg_01 {
+  background: #1a1b1c;
+}
+
+.dark_bg_02 {
+  background: #2a2b2c;
+}

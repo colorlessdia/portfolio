@@ -31,7 +31,7 @@
   width: .6rem;
   height: .6rem;
   border-radius: 50%;
-  background: #666;
+  background: #999;
   transform: translateY(calc(-50% + .1rem));
 }
 

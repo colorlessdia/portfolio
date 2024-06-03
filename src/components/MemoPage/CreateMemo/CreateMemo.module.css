@@ -9,13 +9,19 @@
   width: 33rem;
   height: 100%;
   padding-left: 1rem;
+  color: inherit;
   border-top-left-radius: .8rem;
   border-bottom-left-radius: .8rem;
   border: .2rem solid #777;
+  background: inherit;
 }
 
 .input:focus {
   outline: 0;
+}
+
+.input::placeholder {
+  color: #999;
 }
 
 .button {

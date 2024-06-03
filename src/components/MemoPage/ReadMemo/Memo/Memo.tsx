@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { memoActions } from '../../../../libs/redux/reducers/memoSlice';
-import { useAppDispatch } from '../../../../hooks/useRedux';
+import { useAppDispatch, useAppSelector } from '../../../../hooks/useRedux';
 import type { MemoType } from '../../../../types';
 import getCurrentTime from '../../../../utils/getCurrentTime';
 import DeleteMemo from './DeleteMemo/DeleteMemo';
@@ -19,6 +19,7 @@ const Memo = ({ memo }: MemoProps) => {
   const appDispatch = useAppDispatch();
   const mappedDate = Object.fromEntries(Object.entries(memo.dateList));
   const { YYYY, MM, DD, hh, mm, ss } = mappedDate;
+  const { theme } = useAppSelector(state => state.theme);
 
   const handleChangeMemoValue = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setMemoValue(e.target.value);
@@ -57,7 +58,7 @@ const Memo = ({ memo }: MemoProps) => {
         readOnly={isUpdateMode ? false : true}
         value={memoValue}
         onChange={handleChangeMemoValue}
-        className={styles.content}
+        className={`${styles.content} ${theme === 'dark' ? 'dark_bg_01 dark_font_01' : ''}`}
       ></textarea>
       {/* part */}
       <div className={styles.part}>

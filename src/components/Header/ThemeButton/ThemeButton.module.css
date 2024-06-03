@@ -1,0 +1,9 @@
+.theme_button {
+  --button_size: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--button_size);
+  height: var(--button_size);
+  font-size: var(--button_size);
+}

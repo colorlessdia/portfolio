@@ -1,7 +1,8 @@
 .button {
   padding: .8rem 1.2rem;
+  color: inherit;
   border-radius: 3rem;
-  border: .1rem solid #777;
+  border: .2rem solid #777;
 }
 
 /* responsive: 360px ~ 767px */
