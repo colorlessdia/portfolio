@@ -15,7 +15,7 @@ const ThemeButton = () => {
     <button
       type='button'
       onClick={handleClickChangeTheme}
-      style={{ fontSize: theme === 'light' ? '2.8rem' : '3.2rem'}}
+      style={{ fontSize: theme === 'light' ? '2.4rem' : '2.8rem'}}
       className={`${styles.theme_button} ${theme === 'dark' ? 'dark_font_01' : ''}`}
     >
       {

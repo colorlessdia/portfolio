@@ -46,6 +46,7 @@ body {
   font-family: var(--font-kr);
   font-size: 1.6rem;
   color: #333;
+  word-break: keep-all;
 }
 
 li {
