@@ -26,6 +26,9 @@ const memoSlice = createSlice({
       
       state.memoList = filteredMemo;
     },
+    deleteAllMemo: (state) => {
+      state.memoList = [];
+    },
     updateMemo: (state, action: PayloadAction<MemoType>) => {
       const updateMemoList = state.memoList.map(memo => {
         if (memo.id === action.payload.id) {

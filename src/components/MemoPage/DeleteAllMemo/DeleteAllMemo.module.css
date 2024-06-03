@@ -1,0 +1,15 @@
+.button {
+  padding: .8rem 1.2rem;
+  font-weight: 700;
+  color: #e55039;
+  border-radius: 3rem;
+  border: .2rem solid #e55039;
+}
+
+/* responsive: 360px ~ 767px */
+@media (360px <= width <= 767px) {
+  .button {
+    padding: .4rem .8rem;
+    font-size: 1.2rem;
+  }
+}

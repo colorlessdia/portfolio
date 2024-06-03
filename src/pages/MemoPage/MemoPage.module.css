@@ -7,3 +7,35 @@
   width: 144rem;
   padding: 2rem;
 }
+
+.button_group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+/* responsive: 1024px ~ 1439px */
+@media (1024px <= width <= 1439px) {
+  .main_inner {
+    width: 102.4rem;
+    padding: 1.2rem;
+  }
+}
+
+/* responsive: 360px ~ 1023px */
+@media (360px <= width <= 1023px) {
+  .main_inner {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* responsive: 360px ~ 767px */
+@media (360px <= width <= 767px) {
+  .button_group {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

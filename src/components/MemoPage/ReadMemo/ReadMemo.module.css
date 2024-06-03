@@ -3,3 +3,24 @@
   gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
 }
+
+/* responsive: 1024px ~ 1439px */
+@media (1024px <= width <= 1439px) {
+  .memo_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* responsive: 768px ~ 1023px */
+@media (768px <= width <= 1023px) {
+  .memo_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* responsive: 360px ~ 767px */
+@media (360px <= width <= 767px) {
+  .memo_list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,17 +1,40 @@
 .create_memo {
   display: flex;
   align-items: center;
-  height: 3rem;
+  height: 4rem;
   margin-bottom: 3rem;
 }
 
 .input {
-  width: 30rem;
+  width: 33rem;
   height: 100%;
   padding-left: 1rem;
+  border-top-left-radius: .8rem;
+  border-bottom-left-radius: .8rem;
+  border: .2rem solid #777;
+}
+
+.input:focus {
+  outline: 0;
 }
 
 .button {
   height: 100%;
-  padding: 0 1rem;
+  padding: 0 1.2rem;
+  color: #fff;
+  border-top-right-radius: .8rem;
+  border-bottom-right-radius: .8rem;
+  background: #777;
+}
+
+/* responsive: 360px ~ 767px */
+@media (360px <= width <= 767px) {
+  .input {
+    width: 100%;
+  }
+
+  .button {
+    width: 14rem;
+    padding: 0 2rem;
+  }
 }

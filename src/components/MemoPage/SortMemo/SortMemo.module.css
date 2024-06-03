@@ -1,5 +1,11 @@
 .sort_button_list {
   display: flex;
   gap: 2rem;
-  margin-bottom: 3rem;
+}
+
+/* responsive: 360px ~ 767px */
+@media (360px <= width <= 767px) {
+  .sort_button_list {
+    gap: 1rem;
+  }
 }

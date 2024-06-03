@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useAppSelector } from "../../../hooks/useRedux";
 import Memo from "./Memo/Memo";
 import styles from './ReadMemo.module.css';
