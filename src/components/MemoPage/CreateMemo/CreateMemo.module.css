@@ -1,12 +1,13 @@
 .create_memo {
   display: flex;
+  justify-content: center;
   align-items: center;
-  height: 4rem;
+  height: 5rem;
   margin-bottom: 3rem;
 }
 
 .input {
-  width: 33rem;
+  width: 50rem;
   height: 100%;
   padding-left: 1rem;
   color: inherit;

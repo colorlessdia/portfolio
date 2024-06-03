@@ -18,7 +18,7 @@ const ProjectList = () => {
         frontEnd: ['HTML5', 'CSS3', 'JS', 'TS', 'React JS', 'Redux']
       },
       comment: '경험과 학습을 통해 콘텐츠를 채워나갈 공간, 메인페이지는 김동현을 약식 소개하는 페이지, 토이 프로젝트는 자유형식(ex. 연습용 미니 프로젝트, 리뉴얼 프로젝트, 학습 지식 활용 도전 프로젝트 등)',
-      link: 'https://colorlessdia.github.io/portfolio',
+      link: 'https://github.com/colorlessdia/portfolio',
       media: {
         type: 'component',
         content: '',

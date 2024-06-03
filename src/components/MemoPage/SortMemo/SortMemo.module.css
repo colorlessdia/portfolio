@@ -1,6 +1,6 @@
 .sort_button_list {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 /* responsive: 360px ~ 767px */
