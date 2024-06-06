@@ -4,6 +4,11 @@
   margin-bottom: 4rem;
 }
 
+.button_group {
+  display: flex;
+  gap: 2rem;
+}
+
 .color_picker {
   appearance: none;
   width: 6rem;
@@ -27,4 +32,10 @@
 
 .message {
   line-height: 4rem;
+}
+
+@media (360px <= width <= 799px) {
+  .color_picker_area {
+    flex-wrap: wrap;
+  }
 }
