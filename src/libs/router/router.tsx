@@ -5,6 +5,7 @@ import RootPage from '../../pages/RootPage/RootPage';
 import MainPage from '../../pages/MainPage/MainPage';
 import MemoPage from '../../pages/MemoPage/MemoPage';
 import NotFoundPage from '../../pages/NotFoundPage/NotFoundPage';
+import ColorPage from '../../pages/ColorPage/ColorPage';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: '/memo',
         element: <MemoPage />,
+      },
+      {
+        path: '/color',
+        element: <ColorPage />
       }
     ],
   }

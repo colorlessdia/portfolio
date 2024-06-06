@@ -70,3 +70,9 @@ export interface MemoType {
   isUpdated: boolean;
   dateList: { [date: string]: string };
 }
+
+// color
+export interface ColorType {
+  code: string;
+  alias: string;
+}

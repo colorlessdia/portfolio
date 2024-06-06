@@ -10,7 +10,8 @@ const GNB = () => {
   // list: gnb link
   const gnbLinkList = [
     { path: '/', title: '메인' },
-    { path: '/memo', title: '메모장' }
+    { path: '/memo', title: '메모장' },
+    { path: '/color', title: '컬러 팔레트' },
   ];
 
   return (

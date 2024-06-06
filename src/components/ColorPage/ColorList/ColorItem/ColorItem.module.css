@@ -1,0 +1,31 @@
+.color_item {
+  padding: 1rem;
+  border-radius: .6rem;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, .35), -1px -1px 0 rgba(200, 200, 200, .15);
+}
+
+.color_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+}
+
+.color_name {
+  width: 11rem;
+  height: 2rem;
+  font-size: 1.6rem;
+  color: inherit;
+  text-overflow: ellipsis;
+  background: inherit;
+}
+
+.color_name:read-only {
+  outline: 0;
+  border: 0;
+}
+
+.button_group {
+  display: flex;
+  gap: .5rem;
+}
