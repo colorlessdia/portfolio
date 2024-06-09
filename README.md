@@ -105,6 +105,8 @@ Front-End
 
 ## ToDo
 ### 공통
+라우터
+  - Hashrouter(BrowserRouter gh-pages 미지원, 404파일 지양 등의 이유)
 반응형
   - 큰 단위 분기외 어색한 부분에 대한 세부 분기 적용
 다크모드
