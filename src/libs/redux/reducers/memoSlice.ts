@@ -11,7 +11,64 @@ interface MemoInitialState {
 }
 
 const initialState: MemoInitialState = {
-  memoList: []
+  memoList: [
+    {
+      id: '1',
+      content: '[1] 테스트 편의를 위해 임의로 추가한 기본 메모 목록입니다(새로 고침시 재생성)',
+      isUpdated: false,
+      dateList: {
+        'YYYY': '2024',
+        'MM': '06',
+        'DD': '09',
+        'hh': '12',
+        'mm': '00',
+        'ss': '00',
+        'ms': (new Date('2024-06-09 12:00:00').getTime()).toString()
+      }
+    },
+    {
+      id: '2',
+      content: '[2] 등록된 메모는 정렬, 수정, 삭제 기능을 이용할 수 있습니다',
+      isUpdated: false,
+      dateList: {
+        'YYYY': '2024',
+        'MM': '06',
+        'DD': '09',
+        'hh': '11',
+        'mm': '50',
+        'ss': '00',
+        'ms': (new Date('2024-06-09 11:50:00').getTime()).toString()
+      }
+    },
+    {
+      id: '3',
+      content: '[3] 수정시 "메모가 변경되면", 해당 시점으로 작성일이 변경되고, 아래처럼 수정여부를 표시합니다',
+      isUpdated: true,
+      dateList: {
+        'YYYY': '2024',
+        'MM': '06',
+        'DD': '09',
+        'hh': '10',
+        'mm': '10',
+        'ss': '10',
+        'ms': (new Date('2024-06-09 10:10:10').getTime()).toString()
+      }
+    },
+    {
+      id: '4',
+      content: '[4] 직접 테스트시, 전체 메모 삭제 후 이용하시면 됩니다',
+      isUpdated: false,
+      dateList: {
+        'YYYY': '2024',
+        'MM': '06',
+        'DD': '09',
+        'hh': '08',
+        'mm': '30',
+        'ss': '00',
+        'ms': (new Date('2024-06-09 08:30:00').getTime()).toString()
+      }
+    },
+  ]
 };
 
 const memoSlice = createSlice({
