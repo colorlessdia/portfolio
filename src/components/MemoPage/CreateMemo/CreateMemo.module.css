@@ -1,18 +1,24 @@
-.create_memo {
+.create_memo_wrap {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.create_memo {
+  position: relative;
+  width: 60rem;
   height: 5rem;
   margin-bottom: 3rem;
 }
 
 .input {
-  width: 50rem;
+  position: absolute;
+  inset: 0, 0, 0, 0;
+  width: 100%;
   height: 100%;
   padding-left: 1rem;
   color: inherit;
-  border-top-left-radius: .8rem;
-  border-bottom-left-radius: .8rem;
+  border-radius: .8rem;
   border: .2rem solid #777;
   background: inherit;
 }
@@ -26,22 +32,25 @@
 }
 
 .button {
-  height: 100%;
-  padding: 0 1.2rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  height: calc(100% - 1rem);
+  padding: 0 2rem;
   color: #fff;
-  border-top-right-radius: .8rem;
-  border-bottom-right-radius: .8rem;
+  border-radius: .6rem;
   background: #777;
 }
 
 /* responsive: 360px ~ 767px */
 @media (360px <= width <= 767px) {
-  .input {
+  .create_memo {
     width: 100%;
   }
 
   .button {
-    width: 14rem;
-    padding: 0 2rem;
+    width: 10rem;
+    padding: 0 1.2rem;
   }
 }
