@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 
 // import: router pages
 import RootPage from '../../pages/RootPage/RootPage';
@@ -7,7 +7,7 @@ import MemoPage from '../../pages/MemoPage/MemoPage';
 import NotFoundPage from '../../pages/NotFoundPage/NotFoundPage';
 import ColorPage from '../../pages/ColorPage/ColorPage';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <RootPage />,
@@ -27,8 +27,6 @@ const router = createBrowserRouter([
       }
     ],
   }
-],
-  { basename: process.env.PUBLIC_URL }
-);
+]);
 
 export default router;
