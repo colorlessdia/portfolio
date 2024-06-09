@@ -11,7 +11,7 @@ interface RemoveButtonProps {
 const RemoveButton = ({ code }: RemoveButtonProps) => {
   const appDispatch = useAppDispatch();
   const handleClickRemoveColor = () => {
-    const result = window.confirm('색상을 제거하시겠습니까?');
+    const result = window.confirm('색상을 삭제하시겠습니까?');
 
     if (!result) {
       return
@@ -23,7 +23,7 @@ const RemoveButton = ({ code }: RemoveButtonProps) => {
   return (
     <button
       type='button'
-      title='해당 색상을 제거합니다'
+      title='해당 색상을 삭제합니다'
       onClick={handleClickRemoveColor}
       className={styles.button}
     >
