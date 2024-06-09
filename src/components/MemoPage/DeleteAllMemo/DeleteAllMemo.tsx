@@ -32,6 +32,7 @@ const DeleteAllMemo = () => {
   return (
     <button
       type='button'
+      title='전체 메모를 삭제합니다'
       onClick={handleClickDeleteAllMemo}
       className={styles.button}
     >

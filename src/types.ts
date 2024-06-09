@@ -62,6 +62,7 @@ export type SortType =
 export interface SortButtonType {
   name: string;
   sortType: SortType;
+  description: string;
 }
 
 export interface MemoType {

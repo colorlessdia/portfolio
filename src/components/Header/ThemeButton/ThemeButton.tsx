@@ -15,12 +15,12 @@ const ThemeButton = () => {
         appDispatch( themeActions.changeTheme('light') );
       localStorage.setItem('theme', 'light');
     }
-
   };
 
   return (
     <button
       type='button'
+      title={theme === 'light' ? '다크모드로 전환됩니다' : '라이트모드로 전환됩니다'}
       onClick={handleClickChangeTheme}
       style={{ fontSize: theme === 'light' ? '2.4rem' : '2.8rem'}}
       className={`${styles.theme_button} ${theme === 'dark' ? 'dark_font_01' : ''}`}

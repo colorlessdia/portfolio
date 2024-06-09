@@ -10,7 +10,7 @@ const ModifyButton = ({ handleClickSetIsModifyMode }: ModifyButtonProps) => {
   return (
     <button
       type='button'
-      title='색상 이름 수정'
+      title='해당 색상 이름을 수정합니다'
       onClick={handleClickSetIsModifyMode}
       className={styles.button}
     >

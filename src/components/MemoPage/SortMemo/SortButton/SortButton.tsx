@@ -18,6 +18,7 @@ const SortButton = ({ buttonInfo }: SortButtonProps) => {
   return (
     <button
       type='button'
+      title={buttonInfo.description}
       onClick={handleClickSortMemo}
       className={styles.button}
     >

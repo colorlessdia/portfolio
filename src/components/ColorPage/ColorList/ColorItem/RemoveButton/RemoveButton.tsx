@@ -23,7 +23,7 @@ const RemoveButton = ({ code }: RemoveButtonProps) => {
   return (
     <button
       type='button'
-      title='색상 제거'
+      title='해당 색상을 제거합니다'
       onClick={handleClickRemoveColor}
       className={styles.button}
     >

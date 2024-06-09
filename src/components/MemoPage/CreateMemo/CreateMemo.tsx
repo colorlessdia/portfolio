@@ -23,6 +23,7 @@ const CreateMemo = () => {
       />
       <button
         type='button'
+        title='입력한 메모가 등록됩니다'
         onClick={handleClickCreateMemo}
         className={styles.button}
       >

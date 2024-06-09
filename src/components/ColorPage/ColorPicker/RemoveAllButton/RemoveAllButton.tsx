@@ -26,6 +26,7 @@ const RemoveAllButton = () => {
   return (
     <button
       type='button'
+      title='전체 색상을 삭제합니다'
       onClick={handleClickRemoveAllColor}
       className={styles.button}
     >

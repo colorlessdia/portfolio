@@ -19,7 +19,7 @@ const CopyColor = ({ colorItem }: CopyColorProps) => {
     <>
       <button
         type='button'
-        title='색상 코드 복사'
+        title='클릭시 색상코드가 복사됩니다'
         onClick={handleClickCopyColorCode}
         style={{ background: colorItem.code }}
         className={styles.color}

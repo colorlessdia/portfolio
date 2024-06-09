@@ -11,6 +11,7 @@ const DeleteMemo = ({ id }: DeleteMemoProps) => {
   return (
     <button
       type='button'
+      title='해당 메모를 삭제합니다'
       style={{ color: 'inherit' }}
       onClick={handleClickDeleteMemo}
     >
