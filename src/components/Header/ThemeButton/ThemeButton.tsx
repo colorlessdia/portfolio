@@ -8,7 +8,14 @@ const ThemeButton = () => {
   const { theme } = useAppSelector(state => state.theme);
 
   const handleClickChangeTheme = () => {
-    appDispatch( themeActions.changeTheme() );
+    if (theme === 'light') {
+      appDispatch( themeActions.changeTheme('dark') );
+      localStorage.setItem('theme', 'dark');
+      } else {
+        appDispatch( themeActions.changeTheme('light') );
+      localStorage.setItem('theme', 'light');
+    }
+
   };
 
   return (
